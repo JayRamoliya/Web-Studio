@@ -126,6 +126,29 @@ const AboutPage = () => {
     },
   ];
 
+  const process = [
+    {
+      title: "Discovery & Planning",
+      description: "We start by understanding your business goals, target audience, and project requirements. This phase includes market research and creating a strategic project plan.",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MzA1OQ&ixlib=rb-4.0.3&q=80&w=1080",
+    },
+    {
+      title: "Design & Prototyping",
+      description: "We create wireframes and design mockups that align with your brand and meet user expectations. You'll review and approve designs before we move to development.",
+      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MzE2OA&ixlib=rb-4.0.3&q=80&w=1080",
+    },
+    {
+      title: "Development",
+      description: "Our developers bring the designs to life with clean, efficient code. We build your website or application using modern technologies and best practices.",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MzI3Mg&ixlib=rb-4.0.3&q=80&w=1080",
+    },
+    {
+      title: "Testing & Launch",
+      description: "We thoroughly test your website across devices and browsers before launch. After deployment, we provide training and ongoing support to ensure your continued success.",
+      image: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MzM1OQ&ixlib=rb-4.0.3&q=80&w=1080",
+    },
+  ];
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -249,108 +272,46 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Our Process */}
+      {/* Our Process - Redesigned Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Our Process</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               We follow a proven methodology to ensure your project is completed successfully.
             </p>
           </div>
 
-          <div className="relative max-w-4xl mx-auto">
-            {/* Timeline Line */}
-            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200"></div>
-
-            {/* Timeline Items */}
-            {/* Step 1 */}
-            <div className="relative mb-16">
-              <div className="md:flex items-center">
-                <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right">
-                  <h3 className="text-xl font-bold mb-3">Discovery & Planning</h3>
-                  <p className="text-gray-600">
-                    We start by understanding your business goals, target audience, and project requirements. This phase includes market research and creating a strategic project plan.
-                  </p>
+          <div className="max-w-6xl mx-auto">
+            {process.map((step, index) => (
+              <div 
+                key={index} 
+                className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 mb-20 items-center`}
+              >
+                <div className="md:w-1/2 space-y-4">
+                  <h3 className="text-2xl font-bold">{step.title}</h3>
+                  <p className="text-gray-600">{step.description}</p>
                 </div>
-                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-primary text-white font-bold flex items-center justify-center">
-                  1
-                </div>
-                <div className="md:w-1/2 md:pl-12">
+                <div className="md:w-1/2 relative">
+                  {index % 2 === 0 && (
+                    <div className="absolute -left-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-primary rounded-full z-10 hidden md:flex items-center justify-center text-white">
+                      {index + 1}
+                    </div>
+                  )}
+                  {index % 2 === 1 && (
+                    <div className="absolute -right-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-primary rounded-full z-10 hidden md:flex items-center justify-center text-white">
+                      {index + 1}
+                    </div>
+                  )}
                   <img
-                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MzA1OQ&ixlib=rb-4.0.3&q=80&w=1080"
-                    alt="Discovery & Planning"
-                    className="rounded-lg shadow-md"
+                    src={step.image}
+                    alt={step.title}
+                    className="rounded-lg shadow-lg w-full object-cover"
+                    style={{ height: "360px" }}
                   />
                 </div>
               </div>
-            </div>
-
-            {/* Step 2 */}
-            <div className="relative mb-16">
-              <div className="md:flex items-center">
-                <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12 order-last md:text-left">
-                  <h3 className="text-xl font-bold mb-3">Design & Prototyping</h3>
-                  <p className="text-gray-600">
-                    We create wireframes and design mockups that align with your brand and meet user expectations. You'll review and approve designs before we move to development.
-                  </p>
-                </div>
-                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-primary text-white font-bold flex items-center justify-center">
-                  2
-                </div>
-                <div className="md:w-1/2 md:pl-12 md:order-first">
-                  <img
-                    src="https://images.unsplash.com/photo-1561070791-2526d30994b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MzE2OA&ixlib=rb-4.0.3&q=80&w=1080"
-                    alt="Design & Prototyping"
-                    className="rounded-lg shadow-md"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Step 3 */}
-            <div className="relative mb-16">
-              <div className="md:flex items-center">
-                <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right">
-                  <h3 className="text-xl font-bold mb-3">Development</h3>
-                  <p className="text-gray-600">
-                    Our developers bring the designs to life with clean, efficient code. We build your website or application using modern technologies and best practices.
-                  </p>
-                </div>
-                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-primary text-white font-bold flex items-center justify-center">
-                  3
-                </div>
-                <div className="md:w-1/2 md:pl-12">
-                  <img
-                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MzI3Mg&ixlib=rb-4.0.3&q=80&w=1080"
-                    alt="Development"
-                    className="rounded-lg shadow-md"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Step 4 */}
-            <div className="relative">
-              <div className="md:flex items-center">
-                <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12 order-last md:text-left">
-                  <h3 className="text-xl font-bold mb-3">Testing & Launch</h3>
-                  <p className="text-gray-600">
-                    We thoroughly test your website across devices and browsers before launch. After deployment, we provide training and ongoing support to ensure your continued success.
-                  </p>
-                </div>
-                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-primary text-white font-bold flex items-center justify-center">
-                  4
-                </div>
-                <div className="md:w-1/2 md:pl-12 md:order-first">
-                  <img
-                    src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MzM1OQ&ixlib=rb-4.0.3&q=80&w=1080"
-                    alt="Testing & Launch"
-                    className="rounded-lg shadow-md"
-                  />
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
