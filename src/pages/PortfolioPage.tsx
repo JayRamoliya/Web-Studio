@@ -80,6 +80,14 @@ const PortfolioPage = () => {
       description: "Creative design blog with portfolio showcase and community features.",
       technologies: ["Gatsby", "Contentful CMS", "Netlify", "GraphQL"],
     },
+    {
+      id: 10,
+      title: "CreativeSpace",
+      category: "blog",
+      image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjU2NA&ixlib=rb-4.0.3&q=80&w=1080",
+      description: "Creative design blog with portfolio showcase and community features.",
+      technologies: ["Gatsby", "Contentful CMS", "Netlify", "GraphQL"],
+    },
   ];
 
   const filteredProjects = filter === "all" 
@@ -152,7 +160,7 @@ const PortfolioPage = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                     <Link to={`/portfolio/${project.id}`}>
-                      <Button variant="outline" className="text-white border-white">
+                      <Button className="text-white border-white">
                         View Case Study
                       </Button>
                     </Link>

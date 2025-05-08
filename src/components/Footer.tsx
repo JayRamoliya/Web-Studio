@@ -16,7 +16,7 @@ const Footer = () => {
               and succeed online.
             </p>
             <div className="flex gap-3">
-              <Button variant="outline" size="icon" className="rounded-full">
+              <Button size="icon" className="rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -32,7 +32,7 @@ const Footer = () => {
                 </svg>
                 <span className="sr-only">Facebook</span>
               </Button>
-              <Button variant="outline" size="icon" className="rounded-full">
+              <Button size="icon" className="rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -48,7 +48,7 @@ const Footer = () => {
                 </svg>
                 <span className="sr-only">Twitter</span>
               </Button>
-              <Button variant="outline" size="icon" className="rounded-full">
+              <Button size="icon" className="rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"

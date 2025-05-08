@@ -168,16 +168,16 @@ const HomePage = () => {
                 <Button size="lg" className="font-medium">
                   Get a Free Quote
                 </Button>
-                <Button variant="outline" size="lg">
+                <Button className="bg-dark border" size="lg">
                   View Our Work
                 </Button>
               </div>
             </div>
             <div className="md:w-1/2">
               <img
-                src="https://images.unsplash.com/photo-1581092921461-fd0e43298234?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MjZ8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8fHwxNzE2MzQ1NTU0fDA&ixlib=rb-4.0.3&q=80&w=800"
+                src="https://jayramoliya.github.io/RES%20PORT/jay_photo-removebg-preview.png"
                 alt="Hero"
-                className="rounded-lg shadow-2xl animate-fade-in appear"
+                className="rounded-lg shadow-2xl animate-fade-in appear float-right"
               />
             </div>
           </div>
@@ -242,7 +242,7 @@ const HomePage = () => {
                 <h3 className="text-white text-xl font-bold">LuxHome E-Commerce</h3>
                 <p className="text-gray-200 mb-4">E-commerce website</p>
                 <Link to="/portfolio">
-                  <Button variant="outline" className="text-white border-white">
+                  <Button className="text-white border-white">
                     View Case Study
                   </Button>
                 </Link>
@@ -260,7 +260,7 @@ const HomePage = () => {
                 <h3 className="text-white text-xl font-bold">FitLife Gym</h3>
                 <p className="text-gray-200 mb-4">Fitness studio website</p>
                 <Link to="/portfolio">
-                  <Button variant="outline" className="text-white border-white">
+                  <Button className="text-white border-white">
                     View Case Study
                   </Button>
                 </Link>
@@ -278,7 +278,7 @@ const HomePage = () => {
                 <h3 className="text-white text-xl font-bold">FinTrack App</h3>
                 <p className="text-gray-200 mb-4">Financial dashboard</p>
                 <Link to="/portfolio">
-                  <Button variant="outline" className="text-white border-white">
+                  <Button className="text-white border-white">
                     View Case Study
                   </Button>
                 </Link>
@@ -324,8 +324,8 @@ const HomePage = () => {
               ))}
             </CarouselContent>
             <div className="flex justify-center mt-6 gap-2">
-              <CarouselPrevious className="relative inset-0 translate-y-0" />
-              <CarouselNext className="relative inset-0 translate-y-0" />
+              <CarouselPrevious className="relative inset-0 translate-y-0 bg-dark" />
+              <CarouselNext className="relative inset-0 translate-y-0 bg-dark" />
             </div>
           </Carousel>
         </div>
@@ -345,7 +345,7 @@ const HomePage = () => {
               </Button>
             </Link>
             <Link to="/portfolio">
-              <Button variant="outline" size="lg" className="border-white text-white">
+              <Button size="lg" className="border-white text-white">
                 View Our Work
               </Button>
             </Link>
