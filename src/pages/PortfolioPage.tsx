@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
@@ -12,87 +11,118 @@ const PortfolioPage = () => {
       id: 1,
       title: "LuxHome E-Commerce",
       category: "e-commerce",
-      image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTl8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8fHwxNzE2MzQ1NTU0fDA&ixlib=rb-4.0.3&q=80&w=800",
-      description: "Luxury home goods e-commerce platform with custom product filtering and checkout.",
+      image:
+        "https://images.unsplash.com/photo-1559028012-481c04fa702d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTl8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8fHwxNzE2MzQ1NTU0fDA&ixlib=rb-4.0.3&q=80&w=800",
+      description:
+        "Luxury home goods e-commerce platform with custom product filtering and checkout.",
       technologies: ["React", "Node.js", "Stripe", "MongoDB"],
     },
     {
       id: 2,
       title: "FitLife Gym",
       category: "business",
-      image: "https://images.unsplash.com/photo-1541462608143-67571c6738dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTF8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8fHwxNzE2MzQ1NTU0fDA&ixlib=rb-4.0.3&q=80&w=800",
-      description: "Website for a local fitness studio with class scheduling and membership management.",
+      image:
+        "https://images.unsplash.com/photo-1541462608143-67571c6738dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTF8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8fHwxNzE2MzQ1NTU0fDA&ixlib=rb-4.0.3&q=80&w=800",
+      description:
+        "Website for a local fitness studio with class scheduling and membership management.",
       technologies: ["WordPress", "Custom Theme", "Booking System"],
     },
     {
       id: 3,
       title: "FinTrack Dashboard",
       category: "app",
-      image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTR8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8fHwxNzE2MzQ1NTU0fDA&ixlib=rb-4.0.3&q=80&w=800",
-      description: "Financial tracking application with custom dashboard and reporting features.",
+      image:
+        "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTR8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8fHwxNzE2MzQ1NTU0fDA&ixlib=rb-4.0.3&q=80&w=800",
+      description:
+        "Financial tracking application with custom dashboard and reporting features.",
       technologies: ["React", "Chart.js", "Firebase", "TypeScript"],
     },
     {
       id: 4,
       title: "TravelBlog",
       category: "blog",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjE5Mg&ixlib=rb-4.0.3&q=80&w=1080",
-      description: "Travel blog with custom content management system and map integration.",
+      image:
+        "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjE5Mg&ixlib=rb-4.0.3&q=80&w=1080",
+      description:
+        "Travel blog with custom content management system and map integration.",
       technologies: ["WordPress", "Custom Plugins", "Google Maps API"],
     },
     {
       id: 5,
       title: "CityEats Delivery",
       category: "e-commerce",
-      image: "https://images.unsplash.com/photo-1579389083078-4e7018379f7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjI2NA&ixlib=rb-4.0.3&q=80&w=1080",
-      description: "Food delivery platform with restaurant management and order tracking.",
+      image:
+        "https://images.unsplash.com/photo-1579389083078-4e7018379f7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjI2NA&ixlib=rb-4.0.3&q=80&w=1080",
+      description:
+        "Food delivery platform with restaurant management and order tracking.",
       technologies: ["React Native", "Node.js", "MongoDB", "Stripe"],
     },
     {
       id: 6,
       title: "AlphaInvest",
       category: "business",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjM0OA&ixlib=rb-4.0.3&q=80&w=1080",
-      description: "Investment firm website with secure client portal and financial data visualization.",
+      image:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjM0OA&ixlib=rb-4.0.3&q=80&w=1080",
+      description:
+        "Investment firm website with secure client portal and financial data visualization.",
       technologies: ["Next.js", "TypeScript", "D3.js", "Auth0"],
     },
     {
       id: 7,
       title: "MedConnect",
       category: "app",
-      image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjQwMQ&ixlib=rb-4.0.3&q=80&w=1080",
-      description: "Healthcare provider application with appointment scheduling and patient records.",
+      image:
+        "https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjQwMQ&ixlib=rb-4.0.3&q=80&w=1080",
+      description:
+        "Healthcare provider application with appointment scheduling and patient records.",
       technologies: ["React", "Express.js", "PostgreSQL", "HIPAA Compliance"],
     },
     {
       id: 8,
       title: "EcoHome",
       category: "business",
-      image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjUwMg&ixlib=rb-4.0.3&q=80&w=1080",
-      description: "Sustainable home products company website with e-commerce integration.",
+      image:
+        "https://images.unsplash.com/photo-1587440871875-191322ee64b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjUwMg&ixlib=rb-4.0.3&q=80&w=1080",
+      description:
+        "Sustainable home products company website with e-commerce integration.",
       technologies: ["Shopify", "Custom Theme", "Product Customizer"],
     },
     {
       id: 9,
       title: "CreativeSpace",
       category: "blog",
-      image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjU2NA&ixlib=rb-4.0.3&q=80&w=1080",
-      description: "Creative design blog with portfolio showcase and community features.",
+      image:
+        "https://images.unsplash.com/photo-1504639725590-34d0984388bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjU2NA&ixlib=rb-4.0.3&q=80&w=1080",
+      description:
+        "Creative design blog with portfolio showcase and community features.",
       technologies: ["Gatsby", "Contentful CMS", "Netlify", "GraphQL"],
     },
     {
       id: 10,
-      title: "CreativeSpace",
-      category: "blog",
-      image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjU2NA&ixlib=rb-4.0.3&q=80&w=1080",
-      description: "Creative design blog with portfolio showcase and community features.",
-      technologies: ["Gatsby", "Contentful CMS", "Netlify", "GraphQL"],
+      title: "Hemraj Nails Studio",
+      category: "webdesign",
+      image: "/img/Hemraj Nails Studio.png",
+      description:
+        "A stylish and inspiring platform by Hemraj Nails Studio — featuring creative nail art blogs, a stunning portfolio showcase, and a vibrant community for nail enthusiasts.",
+      technologies: ["HTMl", "CSS", "React Js", "JavaScript"],
+      link:"https://codepen.io/jayramoliya/full/xbbaEzy"
+    },
+    {
+      id: 11,
+      title: "Hemraj Nails Studio",
+      category: "webdesign",
+      image: "/img/Hemraj Nails Studio.png",
+      description:
+        "A stylish and inspiring platform by Hemraj Nails Studio — featuring creative nail art blogs, a stunning portfolio showcase, and a vibrant community for nail enthusiasts.",
+      technologies: ["HTMl", "CSS", "React Js", "JavaScript"],
+      link:"https://codepen.io/jayramoliya/full/xbbaEzy"
     },
   ];
 
-  const filteredProjects = filter === "all" 
-    ? projects 
-    : projects.filter(project => project.category === filter);
+  const filteredProjects =
+    filter === "all"
+      ? projects
+      : projects.filter((project) => project.category === filter);
 
   return (
     <Layout>
@@ -100,9 +130,12 @@ const PortfolioPage = () => {
       <section className="relative bg-gradient-to-r from-navy-900 to-navy-800 text-white pt-32 pb-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Portfolio</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Our Portfolio
+            </h1>
             <p className="text-lg text-gray-300 mb-8">
-              Browse our recent projects and see how we've helped businesses achieve success online.
+              Browse our recent projects and see how we've helped businesses
+              achieve success online.
             </p>
           </div>
         </div>
@@ -142,6 +175,12 @@ const PortfolioPage = () => {
             >
               Blogs
             </Button>
+            <Button
+              variant={filter === "webdesign" ? "default" : "outline"}
+              onClick={() => setFilter("webdesign")}
+            >
+              Web Design
+            </Button>
           </div>
         </div>
       </section>
@@ -159,11 +198,20 @@ const PortfolioPage = () => {
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                    <Link to={`/portfolio/${project.id}`}>
+                    {/* <Link to={`/portfolio/${project.id}`}>
                       <Button className="text-white border-white">
                         View Case Study
                       </Button>
-                    </Link>
+                    </Link> */}
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button className="text-white border-white">
+                        View Case Study
+                      </Button>
+                    </a>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
@@ -187,9 +235,12 @@ const PortfolioPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-accent text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>
+          <h2 className="text-3xl font-bold mb-6">
+            Ready to Start Your Project?
+          </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Let's create something amazing together. Contact us for a free consultation.
+            Let's create something amazing together. Contact us for a free
+            consultation.
           </p>
           <Link to="/contact">
             <Button variant="secondary" size="lg" className="text-accent">
@@ -205,7 +256,8 @@ const PortfolioPage = () => {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Case Studies</h2>
             <p className="text-gray-600">
-              Dive deeper into our process and see the results we've achieved for our clients.
+              Dive deeper into our process and see the results we've achieved
+              for our clients.
             </p>
           </div>
 
@@ -220,10 +272,16 @@ const PortfolioPage = () => {
                   />
                 </div>
                 <div className="p-6 md:w-3/5">
-                  <div className="uppercase tracking-wide text-sm text-primary font-semibold">E-Commerce</div>
-                  <h3 className="text-xl font-bold mt-2 mb-2">LuxHome: 150% Increase in Online Sales</h3>
+                  <div className="uppercase tracking-wide text-sm text-primary font-semibold">
+                    E-Commerce
+                  </div>
+                  <h3 className="text-xl font-bold mt-2 mb-2">
+                    LuxHome: 150% Increase in Online Sales
+                  </h3>
                   <p className="text-gray-600 mb-4">
-                    Learn how we redesigned LuxHome's website and implemented a strategic e-commerce solution that resulted in a 150% increase in online sales within 6 months.
+                    Learn how we redesigned LuxHome's website and implemented a
+                    strategic e-commerce solution that resulted in a 150%
+                    increase in online sales within 6 months.
                   </p>
                   <Link to="/portfolio/1">
                     <Button variant="outline">Read Case Study</Button>
@@ -242,10 +300,16 @@ const PortfolioPage = () => {
                   />
                 </div>
                 <div className="p-6 md:w-3/5">
-                  <div className="uppercase tracking-wide text-sm text-primary font-semibold">Web App</div>
-                  <h3 className="text-xl font-bold mt-2 mb-2">FinTrack: Revolutionizing Financial Management</h3>
+                  <div className="uppercase tracking-wide text-sm text-primary font-semibold">
+                    Web App
+                  </div>
+                  <h3 className="text-xl font-bold mt-2 mb-2">
+                    FinTrack: Revolutionizing Financial Management
+                  </h3>
                   <p className="text-gray-600 mb-4">
-                    Discover how we created a custom financial dashboard that helped FinTrack's users better manage their finances and led to a 200% increase in user engagement.
+                    Discover how we created a custom financial dashboard that
+                    helped FinTrack's users better manage their finances and led
+                    to a 200% increase in user engagement.
                   </p>
                   <Link to="/portfolio/3">
                     <Button variant="outline">Read Case Study</Button>
