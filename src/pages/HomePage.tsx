@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -11,6 +10,9 @@ import {
 } from "@/components/ui/carousel";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import { myprojects } from '../projects.js';
+
+
 
 const HomePage = () => {
   // Animation effect for elements when they appear in viewport
@@ -150,6 +152,9 @@ const HomePage = () => {
     },
   ];
 
+  const allowedIds = [10, 12, 5];
+  const filteredProjects = myprojects.filter(project => allowedIds.includes(project.id));
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -158,19 +163,23 @@ const HomePage = () => {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 mb-10 md:mb-0">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                We Build <span className="text-primary">Stunning Websites</span> That Convert
+                We Build <span className="text-primary">Stunning Websites</span>{" "}
+                That Convert
               </h1>
               <p className="text-lg mb-8 text-gray-300 md:max-w-md">
-                Transform your online presence with custom web solutions that drive results. 
-                We blend beautiful design with powerful functionality.
+                Transform your online presence with custom web solutions that
+                drive results. We blend beautiful design with powerful
+                functionality.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="font-medium">
                   Get a Free Quote
                 </Button>
-                <Button className="bg-dark border" size="lg">
-                  View Our Work
-                </Button>
+                <Link to="/portfolio">
+                  <Button className="bg-dark border" size="lg">
+                    View Our Work
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="md:w-1/2">
@@ -182,7 +191,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Decorative shapes */}
         <div className="hidden lg:block absolute -bottom-10 left-10 w-20 h-20 bg-primary rounded-full opacity-10"></div>
         <div className="hidden lg:block absolute -top-10 right-10 w-32 h-32 bg-accent rounded-full opacity-10"></div>
@@ -192,9 +201,12 @@ const HomePage = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Our Services
+            </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              We offer comprehensive web solutions tailored to your unique business needs.
+              We offer comprehensive web solutions tailored to your unique
+              business needs.
             </p>
           </div>
 
@@ -226,64 +238,39 @@ const HomePage = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Work</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Browse some of our recent projects and see how we've helped businesses succeed.
+              Browse some of our recent projects and see how we've helped
+              businesses succeed.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Project 1 */}
-            <div className="group relative overflow-hidden rounded-lg animate-fade-in">
-              <img
-                src="https://images.unsplash.com/photo-1559028012-481c04fa702d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTl8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8fHwxNzE2MzQ1NTU0fDA&ixlib=rb-4.0.3&q=80&w=800"
-                alt="E-commerce Project"
-                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <h3 className="text-white text-xl font-bold">LuxHome E-Commerce</h3>
-                <p className="text-gray-200 mb-4">E-commerce website</p>
-                <Link to="/portfolio">
-                  <Button className="text-white border-white">
-                    View Case Study
-                  </Button>
-                </Link>
+            {filteredProjects.map((project) => (
+              <div
+                key={project.id}
+                className="group relative overflow-hidden rounded-lg animate-fade-in"
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                  <h3 className="text-white text-xl font-bold">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-200 mb-4">{project.category}</p>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="text-white border-white">
+                      View Case Study
+                    </Button>
+                  </a>
+                </div>
               </div>
-            </div>
-
-            {/* Project 2 */}
-            <div className="group relative overflow-hidden rounded-lg animate-fade-in">
-              <img
-                src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTF8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8fHwxNzE2MzQ1NTU0fDA&ixlib=rb-4.0.3&q=80&w=800"
-                alt="Fitness Website"
-                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <h3 className="text-white text-xl font-bold">FitLife Gym</h3>
-                <p className="text-gray-200 mb-4">Fitness studio website</p>
-                <Link to="/portfolio">
-                  <Button className="text-white border-white">
-                    View Case Study
-                  </Button>
-                </Link>
-              </div>
-            </div>
-
-            {/* Project 3 */}
-            <div className="group relative overflow-hidden rounded-lg animate-fade-in">
-              <img
-                src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTR8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8fHwxNzE2MzQ1NTU0fDA&ixlib=rb-4.0.3&q=80&w=800"
-                alt="Finance App"
-                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <h3 className="text-white text-xl font-bold">FinTrack App</h3>
-                <p className="text-gray-200 mb-4">Financial dashboard</p>
-                <Link to="/portfolio">
-                  <Button className="text-white border-white">
-                    View Case Study
-                  </Button>
-                </Link>
-              </div>
-            </div>
+            ))}
           </div>
 
           <div className="text-center mt-12">
@@ -298,9 +285,12 @@ const HomePage = () => {
       <section className="py-20 bg-navy-900 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              What Our Clients Say
+            </h2>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              Don't take our word for it – hear from some of our satisfied clients.
+              Don't take our word for it – hear from some of our satisfied
+              clients.
             </p>
           </div>
 
@@ -316,7 +306,9 @@ const HomePage = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <p className="text-lg mb-6 italic text-gray-300">"{testimonial.quote}"</p>
+                    <p className="text-lg mb-6 italic text-gray-300">
+                      "{testimonial.quote}"
+                    </p>
                     <h4 className="font-bold">{testimonial.author}</h4>
                     <p className="text-gray-400">{testimonial.company}</p>
                   </div>
@@ -334,9 +326,12 @@ const HomePage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-accent text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Online Presence?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Transform Your Online Presence?
+          </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Let's discuss your project and create a website that drives results for your business.
+            Let's discuss your project and create a website that drives results
+            for your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">

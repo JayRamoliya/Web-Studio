@@ -1,0 +1,152 @@
+export const myprojects = [
+  {
+    id: 1,
+    title: "PDF Store - Digital Downloads",
+    category: "e-commerce",
+    image: "/img/PDF Store Digital Downloads.png",
+    description:
+      "Luxury home goods e-commerce platform with custom product filtering and checkout.",
+    technologies: ["React", "Node Js", "Express", "MongoDB"],
+    link: "https://codepen.io/jayramoliya/full/YPPOGJm"
+  },
+  {
+    id: 2,
+    title: "FitLife Gym",
+    category: "business",
+    image:
+      "https://images.unsplash.com/photo-1541462608143-67571c6738dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTF8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8fHwxNzE2MzQ1NTU0fDA&ixlib=rb-4.0.3&q=80&w=800",
+    description:
+      "Website for a local fitness studio with class scheduling and membership management.",
+    technologies: ["WordPress", "Custom Theme", "Booking System"],
+  },
+  {
+    id: 3,
+    title: "FinTrack Dashboard",
+    category: "app",
+    image:
+      "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTR8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8fHwxNzE2MzQ1NTU0fDA&ixlib=rb-4.0.3&q=80&w=800",
+    description:
+      "Financial tracking application with custom dashboard and reporting features.",
+    technologies: ["React", "Chart.js", "Firebase", "TypeScript"],
+  },
+  {
+    id: 4,
+    title: "TravelBlog",
+    category: "blog",
+    image:
+      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjE5Mg&ixlib=rb-4.0.3&q=80&w=1080",
+    description:
+      "Travel blog with custom content management system and map integration.",
+    technologies: ["WordPress", "Custom Plugins", "Google Maps API"],
+  },
+  {
+    id: 5,
+    title: "MINNA - Fashion Store",
+    category: "e-commerce",
+    image:
+      "/img/MINNA Fashion Store.png",
+    description:
+      "Food delivery platform with restaurant management and order tracking.",
+    technologies: ["React Native", "Node.js", "MongoDB", "Stripe"],
+    link: "https://codepen.io/jayramoliya/full/wBvZoNy"
+  },
+  {
+    id: 6,
+    title: "AlphaInvest",
+    category: "business",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjM0OA&ixlib=rb-4.0.3&q=80&w=1080",
+    description:
+      "Investment firm website with secure client portal and financial data visualization.",
+    technologies: ["Next.js", "TypeScript", "D3.js", "Auth0"],
+  },
+  {
+    id: 7,
+    title: "MedConnect",
+    category: "app",
+    image:
+      "https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjQwMQ&ixlib=rb-4.0.3&q=80&w=1080",
+    description:
+      "Healthcare provider application with appointment scheduling and patient records.",
+    technologies: ["React", "Express.js", "PostgreSQL", "HIPAA Compliance"],
+  },
+  {
+    id: 8,
+    title: "EcoHome",
+    category: "business",
+    image:
+      "https://images.unsplash.com/photo-1587440871875-191322ee64b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjUwMg&ixlib=rb-4.0.3&q=80&w=1080",
+    description:
+      "Sustainable home products company website with e-commerce integration.",
+    technologies: ["Shopify", "Custom Theme", "Product Customizer"],
+  },
+  {
+    id: 9,
+    title: "CreativeSpace",
+    category: "blog",
+    image:
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjU2NA&ixlib=rb-4.0.3&q=80&w=1080",
+    description:
+      "Creative design blog with portfolio showcase and community features.",
+    technologies: ["Gatsby", "Contentful CMS", "Netlify", "GraphQL"],
+  },
+  {
+    id: 10,
+    title: "Hemraj Nails Studio",
+    category: "webdesign",
+    image: "/img/Hemraj Nails Studio.png",
+    description:
+      "A stylish and inspiring platform by Hemraj Nails Studio — featuring creative nail art blogs, a stunning portfolio showcase, and a vibrant community for nail enthusiasts.",
+    technologies: ["HTMl", "CSS", "React Js", "JavaScript"],
+    link: "https://codepen.io/jayramoliya/full/xbbaEzy"
+  },
+  {
+    id: 11,
+    title: "Premium Home Decoration",
+    category: "webdesign",
+    image: "/img/Premium Home Decoratio.png",
+    description: "A stylish and inspiring platform by Hemraj Nails Studio — featuring creative nail art blogs, a stunning portfolio showcase, and a vibrant community for nail enthusiasts.",
+    technologies: ["HTMl", "CSS", "React Js", "JavaScript"],
+    link: "https://codepen.io/jayramoliya/full/Kwwxgjy"
+  },
+  {
+    id: 12,
+    title: "Nail Salon Directory",
+    category: "webdesign",
+    image: "/img/Nail Salon Directory.png",
+    description:
+      "A stylish and inspiring platform by Hemraj Nails Studio — featuring creative nail art blogs, a stunning portfolio showcase, and a vibrant community for nail enthusiasts.",
+    technologies: ["HTMl", "CSS", "React Js", "JavaScript"],
+    link: "https://codepen.io/jayramoliya/full/raaZMRK"
+  },
+  {
+    id: 14,
+    title: "Luxury Spa & Salon",
+    category: "webdesign",
+    image: "/img/Luxury Spa & Salon.png",
+    description:
+      "A stylish and inspiring platform by Hemraj Nails Studio — featuring creative nail art blogs, a stunning portfolio showcase, and a vibrant community for nail enthusiasts.",
+    technologies: ["HTMl", "CSS", "React Js", "Figma"],
+    link: "https://codepen.io/jayramoliya/full/ZYYMpoa"
+  },
+  {
+    id: 15,
+    title: "JASSTYLE Nail Studio",
+    category: "webdesign",
+    image: "/img/JASSTYLE Nail Studio.png",
+    description:
+      "A stylish and inspiring platform by Hemraj Nails Studio — featuring creative nail art blogs, a stunning portfolio showcase, and a vibrant community for nail enthusiasts.",
+    technologies: ["HTMl", "CSS", "React Js", "Figma"],
+    link: "https://codepen.io/jayramoliya/full/vEEzKrr"
+  },
+  {
+    id: 13,
+    title: "Anime Merchandise Store",
+    category: "e-commerce",
+    image: "/img/Anime Merchandise Store.png",
+    description:
+      "A stylish and inspiring platform by Hemraj Nails Studio — featuring creative nail art blogs, a stunning portfolio showcase, and a vibrant community for nail enthusiasts.",
+    technologies: ["HTMl", "CSS", "React Js", "JavaScript"],
+    link: "https://codepen.io/jayramoliya/full/zxxJKeJ"
+  },
+];

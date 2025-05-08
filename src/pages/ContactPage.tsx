@@ -162,7 +162,7 @@ const ContactPage = () => {
                   <div>
                     <h3 className="font-bold text-lg mb-1">Phone</h3>
                     <p className="text-gray-600 mb-1">Monday-Friday, 9am-5pm EST</p>
-                    <p className="text-primary">(555) 123-4567</p>
+                    <p className="text-primary">+91 6353716421</p>
                   </div>
                 </div>
 
@@ -187,7 +187,7 @@ const ContactPage = () => {
                   <div>
                     <h3 className="font-bold text-lg mb-1">Email</h3>
                     <p className="text-gray-600 mb-1">We'll respond within 24 hours</p>
-                    <p className="text-primary">hello@webstudio.com</p>
+                    <p className="text-primary">ramoliyajay9@gmail.com</p>
                   </div>
                 </div>
 
@@ -212,7 +212,7 @@ const ContactPage = () => {
                   <div>
                     <h3 className="font-bold text-lg mb-1">Office</h3>
                     <p className="text-gray-600 mb-1">Come say hello</p>
-                    <p className="text-primary">123 Design Street, San Francisco, CA 94107</p>
+                    <p className="text-primary">Rajkot</p>
                   </div>
                 </div>
               </div>
@@ -221,16 +221,7 @@ const ContactPage = () => {
               <div className="mt-10">
                 <h3 className="font-bold text-lg mb-4">Location</h3>
                 <div className="h-64 bg-gray-200 rounded-lg">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.50764017625429!3d37.75781499224814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1656304880364!5m2!1sen!2s"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Office Location"
-                    className="rounded-lg"
-                  ></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118147.6868902174!2d70.73889432855621!3d22.273625028087576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c98ac71cdf0f%3A0x76dd15cfbe93ad3b!2sRajkot%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1746723960286!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} loading="lazy" title="Office Location" className="rounded-lg"></iframe>
                 </div>
               </div>
             </div>
