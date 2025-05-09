@@ -21,13 +21,14 @@ export const myprojects = [
   },
   {
     id: 3,
-    title: "FinTrack Dashboard",
+    title: "QR Creative Lab",
     category: "app",
     image:
-      "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTR8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8fHwxNzE2MzQ1NTU0fDA&ixlib=rb-4.0.3&q=80&w=800",
+      "/img/QR Creative Lab.png",
     description:
-      "Financial tracking application with custom dashboard and reporting features.",
-    technologies: ["React", "Chart.js", "Firebase", "TypeScript"],
+      "QR Creative Lab – Instantly create and customize QR codes for free, no signup needed.",
+    technologies: ["React", "Lovable AI", "Figma", "JavaScript"],
+    link:"https://qrcreativelab.netlify.app/"
   },
   {
     id: 4,
@@ -105,7 +106,7 @@ export const myprojects = [
     title: "Premium Home Decoration",
     category: "webdesign",
     image: "/img/Premium Home Decoratio.png",
-    description: "A stylish and inspiring platform by Hemraj Nails Studio — featuring creative nail art blogs, a stunning portfolio showcase, and a vibrant community for nail enthusiasts.",
+    description: "Premium Home Decoration – Elevate your space with high-quality, stylish décor that blends elegance and comfort.",
     technologies: ["HTMl", "CSS", "React Js", "JavaScript"],
     link: "https://codepen.io/jayramoliya/full/Kwwxgjy"
   },
@@ -115,7 +116,7 @@ export const myprojects = [
     category: "webdesign",
     image: "/img/Nail Salon Directory.png",
     description:
-      "A stylish and inspiring platform by Hemraj Nails Studio — featuring creative nail art blogs, a stunning portfolio showcase, and a vibrant community for nail enthusiasts.",
+      "Nail Salon Directory – Your go-to guide for the best nail salons.",
     technologies: ["HTMl", "CSS", "React Js", "JavaScript"],
     link: "https://codepen.io/jayramoliya/full/raaZMRK"
   },
@@ -125,7 +126,7 @@ export const myprojects = [
     category: "webdesign",
     image: "/img/Luxury Spa & Salon.png",
     description:
-      "A stylish and inspiring platform by Hemraj Nails Studio — featuring creative nail art blogs, a stunning portfolio showcase, and a vibrant community for nail enthusiasts.",
+      "Luxury Spa & Salon – Indulge in premium beauty treatments, relaxation, and rejuvenation in a luxurious setting.",
     technologies: ["HTMl", "CSS", "React Js", "Figma"],
     link: "https://codepen.io/jayramoliya/full/ZYYMpoa"
   },
@@ -135,7 +136,7 @@ export const myprojects = [
     category: "webdesign",
     image: "/img/JASSTYLE Nail Studio.png",
     description:
-      "A stylish and inspiring platform by Hemraj Nails Studio — featuring creative nail art blogs, a stunning portfolio showcase, and a vibrant community for nail enthusiasts.",
+      "JASSTYLE Nail Studio – Get flawless, trendy nails with pro care and custom designs tailored to your style.",
     technologies: ["HTMl", "CSS", "React Js", "Figma"],
     link: "https://codepen.io/jayramoliya/full/vEEzKrr"
   },
@@ -145,7 +146,7 @@ export const myprojects = [
     category: "e-commerce",
     image: "/img/Anime Merchandise Store.png",
     description:
-      "A stylish and inspiring platform by Hemraj Nails Studio — featuring creative nail art blogs, a stunning portfolio showcase, and a vibrant community for nail enthusiasts.",
+      "Anime Merchandise Store – Discover and shop the best anime-themed apparel, figures, and accessories for true fans.",
     technologies: ["HTMl", "CSS", "React Js", "JavaScript"],
     link: "https://codepen.io/jayramoliya/full/zxxJKeJ"
   },
