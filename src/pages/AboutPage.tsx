@@ -26,10 +26,10 @@ const AboutPage = () => {
       bio: "Sarah is a UI/UX expert with a passion for creating beautiful, user-friendly interfaces that drive results.",
     },
     {
-      name: "Michael Chen",
+      name: "Jay Vekariya",
       role: "Senior Developer",
-      image: "https://randomuser.me/api/portraits/men/22.jpg",
-      bio: "Michael specializes in front-end development with expertise in React, Vue, and modern JavaScript frameworks.",
+      image: "/img/jaypatel.jpg",
+      bio: "Jay specializes in Full-Stack development with expertise in React, Vue, and modern JavaScript frameworks.",
     },
     {
       name: "Emma Rodriguez",
