@@ -11,13 +11,14 @@ export const myprojects = [
   },
   {
     id: 2,
-    title: "FitLife Gym",
+    title: "Fast Fix Tech Repair",
     category: "business",
     image:
-      "https://images.unsplash.com/photo-1541462608143-67571c6738dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTF8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8fHwxNzE2MzQ1NTU0fDA&ixlib=rb-4.0.3&q=80&w=800",
+      "/img/Fast Fix Tech Repair.png",
     description:
       "Website for a local fitness studio with class scheduling and membership management.",
-    technologies: ["WordPress", "Custom Theme", "Booking System"],
+    technologies: ["React JS", "JavaScript", "Shop"],
+    link:"https://fastfixrepair.netlify.app/"
   },
   {
     id: 3,
@@ -53,13 +54,14 @@ export const myprojects = [
   },
   {
     id: 6,
-    title: "AlphaInvest",
+    title: "Tech Fix Pro",
     category: "business",
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjM0OA&ixlib=rb-4.0.3&q=80&w=1080",
+      "/img/Tech Fix Pro.png",
     description:
       "Investment firm website with secure client portal and financial data visualization.",
     technologies: ["Next.js", "TypeScript", "D3.js", "Auth0"],
+    link:"https://techrepire.netlify.app/"
   },
   {
     id: 7,
