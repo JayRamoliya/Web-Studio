@@ -20,10 +20,10 @@ const AboutPage = () => {
       bio: "Alex has 15+ years of experience in web development and has led projects for numerous Fortune 500 companies.",
     },
     {
-      name: "Sarah Johnson",
-      role: "Lead Designer",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
-      bio: "Sarah is a UI/UX expert with a passion for creating beautiful, user-friendly interfaces that drive results.",
+      name: "Sanket Vasoya",
+      role: "UI/UX Designer",
+      image: "/img/sanket.jpg",
+      bio: "I’m Sanket, a Senior UI/UX Designer passionate about creating interfaces that users love and businesses trust.",
     },
     {
       name: "Jay Vekariya",

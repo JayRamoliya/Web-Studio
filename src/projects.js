@@ -65,13 +65,13 @@ export const myprojects = [
   },
   {
     id: 7,
-    title: "MedConnect",
+    title: "YTubeSEO",
     category: "app",
     image:
-      "https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODM4MjQwMQ&ixlib=rb-4.0.3&q=80&w=1080",
+      "/img/YTubeSEO.png",
     description:
-      "Healthcare provider application with appointment scheduling and patient records.",
-    technologies: ["React", "Express.js", "PostgreSQL", "HIPAA Compliance"],
+      "Generate SEO Titles, Descriptions & Tags with AI – Instantly!",
+    technologies: ["React", "Express.js", "PostgreSQL", "AI"],
   },
   {
     id: 8,
